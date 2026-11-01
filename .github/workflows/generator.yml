@@ -63,7 +63,7 @@ jobs:
 
       - name: Download Artifact
         if: ${{ !inputs.use_previous_artifact1 }}
-        uses: actions/download-artifact@v8.0.1
+        uses: actions/download-artifact@v8.0.2
         with:
           name: parser-output
 
@@ -104,7 +104,7 @@ jobs:
 
       - name: Download duplicates
         if: ${{ !inputs.use_previous_artifact2 }}
-        uses: actions/download-artifact@v8.0.1
+        uses: actions/download-artifact@v8.0.2
         with:
           name: dupl-notes
 
