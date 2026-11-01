@@ -45,7 +45,7 @@ jobs:
         run: python3 src/parser.py
 
       - name: Upload notes
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: parser-output
           path: |
@@ -81,7 +81,7 @@ jobs:
         run: python3 src/generator.py
 
       - name: Upload duplicates
-        uses: actions/upload-artifact@v7.0.1
+        uses: actions/upload-artifact@v7.0.2
         with:
           name: dupl-notes
           path: |
